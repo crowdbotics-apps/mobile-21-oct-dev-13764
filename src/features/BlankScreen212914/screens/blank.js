@@ -23,12 +23,13 @@ export default class Blank extends React.Component {
     }
   }
 
-  state = { TextInput_2: "", CheckBox_3: true }
+  state = { TextInput_2: "", CheckBox_3: true, Switch_4: true }
 
   render = () => (
     <View>
       <TextInput
         placeholder="Number Input Placeholder"
+        keyboardType="numeric"
         value={this.state.TextInput_2}
         onChangeText={nextValue => this.setState({ TextInput_2: nextValue })}
       />
@@ -36,6 +37,11 @@ export default class Blank extends React.Component {
         title="Checkbox"
         checked={this.state.CheckBox_3}
         onPress={nextChecked => this.setState({ CheckBox_3: nextChecked })}
+      />
+      <Switch
+        trackColor={{ false: "#C0CCDA", true: "#409EFF" }}
+        value={this.state.Switch_4}
+        onValueChange={nextChecked => this.setState({ Switch_4: nextChecked })}
       />
     </View>
   )
@@ -53,5 +59,9 @@ const styles = StyleSheet.create({
   TextInput_2: {},
   View_1: {},
   TextInput_2: {},
-  CheckBox_3: {}
+  CheckBox_3: {},
+  View_1: {},
+  TextInput_2: {},
+  CheckBox_3: {},
+  Switch_4: {}
 })
