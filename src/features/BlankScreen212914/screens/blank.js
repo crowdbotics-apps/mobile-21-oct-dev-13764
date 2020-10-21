@@ -23,7 +23,7 @@ export default class Blank extends React.Component {
     }
   }
 
-  state = { TextInput_2: "" }
+  state = { TextInput_2: "", CheckBox_3: true }
 
   render = () => (
     <View>
@@ -31,6 +31,11 @@ export default class Blank extends React.Component {
         placeholder="Number Input Placeholder"
         value={this.state.TextInput_2}
         onChangeText={nextValue => this.setState({ TextInput_2: nextValue })}
+      />
+      <CheckBox
+        title="Checkbox"
+        checked={this.state.CheckBox_3}
+        onPress={nextChecked => this.setState({ CheckBox_3: nextChecked })}
       />
     </View>
   )
@@ -45,5 +50,8 @@ const styles = StyleSheet.create({
   View_1: {},
   TextInput_2: {},
   View_1: {},
-  TextInput_2: {}
+  TextInput_2: {},
+  View_1: {},
+  TextInput_2: {},
+  CheckBox_3: {}
 })
