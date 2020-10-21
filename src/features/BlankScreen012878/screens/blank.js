@@ -41,5 +41,12 @@ const styles = StyleSheet.create({
   View_1: {},
   Text_3: {},
   View_1: { borderColor: "#5fdd96", borderWidth: 4 },
+  Text_3: {},
+  View_1: {
+    width: "100%",
+    height: "100%",
+    borderColor: "#5fdd96",
+    borderWidth: 4
+  },
   Text_3: {}
 })
