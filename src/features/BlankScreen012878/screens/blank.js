@@ -30,7 +30,6 @@ export default class Blank extends React.Component {
       <Text>Sample text content</Text>
       <TextInput
         placeholder="Number Input Placeholder"
-        keyboardType="numeric"
         value={this.state.TextInput_4}
         onChangeText={nextValue => this.setState({ TextInput_4: nextValue })}
       />
@@ -62,6 +61,10 @@ const styles = StyleSheet.create({
     borderColor: "#5fdd96",
     borderWidth: 4
   },
+
+  Text_3: {},
+  TextInput_4: {},
+  View_1: { borderColor: "#5fdd96", borderWidth: 4 },
   Text_3: {},
   TextInput_4: {}
 })
