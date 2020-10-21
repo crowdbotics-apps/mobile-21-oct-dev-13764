@@ -26,7 +26,7 @@ export default class Blank extends React.Component {
   state = {}
 
   render = () => (
-    <View>
+    <View style={styles.View_1}>
       <Text>Sample text content</Text>
     </View>
   )
@@ -37,6 +37,9 @@ const styles = StyleSheet.create({
     flex: 1,
     marginHorizontal: 16
   },
+
   View_1: {},
+  Text_3: {},
+  View_1: { borderColor: "#5fdd96", borderWidth: 4 },
   Text_3: {}
 })
