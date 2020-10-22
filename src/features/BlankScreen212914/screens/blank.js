@@ -28,7 +28,7 @@ export default class Blank extends React.Component {
   render = () => (
     <View>
       <TextInput
-        placeholder="Number Input Placeholder"
+        placeholder="Number Input  bhbb Placeholder"
         value={this.state.TextInput_2}
         onChangeText={nextValue => this.setState({ TextInput_2: nextValue })}
       />
